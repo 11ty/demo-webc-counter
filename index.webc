@@ -1,7 +1,7 @@
 ---
 layout: layout.webc
 ---
-<h1>WebC</h1>
+<h1>Eleventy WebC Number Counter Demo</h1>
 
 <form method="get">
 	<button type="submit">Submit</button>
@@ -11,3 +11,8 @@ layout: layout.webc
 	<my-counter @value="6"></my-counter>
 	<my-counter @value="10"></my-counter>
 </form>
+
+<footer>
+	<p>See this [code on GitHub](https://github.com/11ty/demo-webc-counter).</p>
+	<p><em>This was originally a demo for a talk given at the <a href="https://www.zachleat.com/web/webc-in-eleventy/">Eleventy Meetup: Adding Components to WebC with Eleventy</a>.</em></p>
+</footer>
