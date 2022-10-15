@@ -1,4 +1,4 @@
-# WebC Demo
+# Eleventy WebC Number Counter Demo
 
 A progressively enhanced server-rendered form-aware web component counter using WebC.
 
