@@ -1,0 +1,36 @@
+<input type="number" :id="uid" :name="name" :value="value">
+
+<template>
+	<button type="button" disabled>Add</button>
+	<output :for="uid" @html="value"></output>
+</template>
+
+<style webc:scoped>
+:host {
+	font-size: 200%;
+}
+:host:defined input {
+	display: none;
+}
+</style>
+
+<script>
+window.customElements.define("my-counter", class extends HTMLElement {
+	connectedCallback() {
+		let tmpl = this.querySelector(":scope template");
+		tmpl.replaceWith(tmpl.content);
+
+		let btn = this.querySelector(":scope button");
+		btn.removeAttribute("disabled");
+		let output = this.querySelector(":scope output");
+		let input = this.querySelector(":scope input");
+
+		let value = parseInt(output.innerText);
+		btn.addEventListener("click", () => {
+			value++;
+			output.innerText = value;
+			input.value = value;
+		})
+	}
+})
+</script>

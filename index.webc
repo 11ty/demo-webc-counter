@@ -1,0 +1,13 @@
+---
+layout: layout.webc
+---
+<h1>WebC</h1>
+
+<form method="get">
+	<button type="submit">Submit</button>
+
+	<my-counter @value="3" @name="first"></my-counter>
+	<my-counter @value="5"></my-counter>
+	<my-counter @value="6"></my-counter>
+	<my-counter @value="10"></my-counter>
+</form>
