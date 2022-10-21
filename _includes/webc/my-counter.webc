@@ -12,6 +12,7 @@
 :host input {
 	width: 4em;
 }
+/* input is hidden but we keep it around for successful form control value */
 :host:defined input {
 	display: none;
 }
