@@ -1,15 +1,29 @@
 {
-  "name": "demo-webc-eleventy-meetup",
+  "name": "@11ty/demo-webc-counter",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
     "build": "npx @11ty/eleventy",
     "start": "npx @11ty/eleventy --serve"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "engines": {
+    "node": ">=14"
+  },
+  "funding": {
+    "type": "opencollective",
+    "url": "https://opencollective.com/11ty"
+  },
+  "author": {
+    "name": "Zach Leatherman",
+    "email": "zachleatherman@gmail.com",
+    "url": "https://zachleat.com/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/11ty/demo-webc-counter.git"
+  },
+  "bugs": "https://github.com/11ty/demo-webc-counter/issues",
+  "license": "MIT",
   "dependencies": {
     "@11ty/eleventy": "^2.0.0-canary.16",
     "@11ty/eleventy-plugin-webc": "^0.5.1"
