@@ -21,12 +21,12 @@
 <script>
 window.customElements.define("my-counter", class extends HTMLElement {
 	connectedCallback() {
-		let tmpl = this.querySelector(":scope template");
+		let tmpl = this.querySelector("template");
 		tmpl.replaceWith(tmpl.content);
 
-		let btn = this.querySelector(":scope button");
-		let output = this.querySelector(":scope output");
-		let input = this.querySelector(":scope input");
+		let btn = this.querySelector("button");
+		let output = this.querySelector("output");
+		let input = this.querySelector("input");
 
 		let value = parseInt(output.innerText);
 		btn.addEventListener("click", () => {
