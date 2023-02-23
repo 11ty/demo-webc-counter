@@ -5,8 +5,7 @@ module.exports = function(eleventyConfig) {
 
 	eleventyConfig.addPlugin(pluginWebc);
 
-	eleventyConfig.setServerPassthroughCopyBehavior("copy");
 	eleventyConfig.setServerOptions({
-		domdiff: false
+		domDiff: false
 	});
 };

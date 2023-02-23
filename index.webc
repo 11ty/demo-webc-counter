@@ -6,10 +6,10 @@ layout: layout.webc
 <form method="get">
 	<button type="submit">Submit</button>
 
-	<my-counter @value="3" @name="first"></my-counter>
-	<my-counter @value="5" @name="second"></my-counter>
-	<my-counter @value="6" @name="third"></my-counter>
-	<my-counter @value="10" @name="fourth"></my-counter>
+	<my-counter @name="first" @value="3"></my-counter>
+	<my-counter @name="second" @value="5"></my-counter>
+	<my-counter @name="third" @value="6"></my-counter>
+	<my-counter @name="fourth" @value="10"></my-counter>
 </form>
 
 <template webc:is="footer" webc:type="11ty" 11ty:type="md">
