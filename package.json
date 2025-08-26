@@ -7,7 +7,7 @@
     "start": "npx @11ty/eleventy --serve --incremental"
   },
   "engines": {
-    "node": ">=14"
+    "node": ">=18"
   },
   "funding": {
     "type": "opencollective",
@@ -25,7 +25,7 @@
   "bugs": "https://github.com/11ty/demo-webc-counter/issues",
   "license": "MIT",
   "dependencies": {
-    "@11ty/eleventy": "^2.0.1",
-    "@11ty/eleventy-plugin-webc": "^0.11.0"
+    "@11ty/eleventy": "^3.1.2",
+    "@11ty/eleventy-plugin-webc": "^0.12.0-beta.6"
   }
 }
